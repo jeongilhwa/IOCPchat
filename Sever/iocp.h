@@ -1,12 +1,12 @@
 #pragma once
 #include "pch.h"
-typedef struct Overlap   // buffer info
-{
-	OVERLAPPED overlapped;
-	WSABUF wsaBuf;
-	char buffer[BUF_SIZE];
-	INT rwMode;    // READ or WRITE
-}*P_overlap;
+//typedef struct Overlap   // buffer info
+//{
+//	OVERLAPPED overlapped;
+//	WSABUF wsaBuf;
+//	char buffer[BUF_SIZE];
+//	INT rwMode;    // READ or WRITE
+//}*P_overlap;
 
 class Server
 {
@@ -15,7 +15,7 @@ private:
 	HANDLE hcp;
 	SYSTEM_INFO sysInfo;
 	//오버랩과 메세지버퍼정보
-	P_overlap ioInfo;
+	//P_overlap ioInfo;
 //	LPPER_HANDLE_DATA handleInfo;
 	SOCKET hServSock;
 	SOCKADDR_IN servAdr;
